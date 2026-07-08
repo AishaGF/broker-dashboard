@@ -10,74 +10,73 @@
     --bg:#0b1220; --panel:#121c2e; --panel2:#0f1828; --line:#23324a;
     --txt:#e8eef7; --mut:#8ea2bd; --acc:#3da9fc; --acc2:#5ee0b0;
     --warn:#ffb454; --bad:#ff6b7a; --good:#5ee0b0; --chip:#1c2c44;
-  }
+}
   *{box-sizing:border-box}
   body{margin:0;background:linear-gradient(180deg,#0b1220,#0c1424);color:var(--txt);
     font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;line-height:1.5}
-  .wrap{max-width:1080px;margin:0 auto;padding:28px 18px 60px}
+.wrap{max-width:1080px;margin:0 auto;padding:28px 18px 60px}
   header.top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding-bottom:16px}
   h1{font-size:24px;margin:0;letter-spacing:.5px}
-  .sub{color:var(--mut);font-size:13px;margin-top:6px}
-  .updated{font-size:12px;color:var(--mut);text-align:right}
-  .updated b{color:var(--acc2)}
+.sub{color:var(--mut);font-size:13px;margin-top:6px}
+.updated{font-size:12px;color:var(--mut);text-align:right}
+.updated b{color:var(--acc2)}
   button.reload,button.act{margin-top:6px;background:var(--chip);color:var(--txt);border:1px solid var(--line);
     border-radius:8px;padding:6px 12px;font-size:12px;cursor:pointer}
   button.reload:hover,button.act:hover{border-color:var(--acc)}
-  .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:22px 0}
-  .kpi{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
-  .kpi .lab{font-size:12px;color:var(--mut)}
-  .kpi .val{font-size:23px;font-weight:700;margin-top:4px}
-  .kpi .meta{font-size:11px;color:var(--mut);margin-top:4px}
-  .up{color:var(--good)} .down{color:var(--bad)}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:22px 0}
+.kpi{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.kpi .lab{font-size:12px;color:var(--mut)}
+.kpi .val{font-size:23px;font-weight:700;margin-top:4px}
+.kpi .meta{font-size:11px;color:var(--mut);margin-top:4px}
+.up{color:var(--good)} .down{color:var(--bad)}
   section{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px 18px 8px;margin:18px 0}
   section h2{font-size:17px;margin:0 0 2px}
   section .desc{color:var(--mut);font-size:12px;margin:0 0 14px}
-  .chartbox{position:relative;height:330px}
-  .chartbox.short{height:300px}
+.chartbox{position:relative;height:330px}
+.chartbox.short{height:300px}
   table{width:100%;border-collapse:collapse;font-size:13px;margin-top:4px;display:block;overflow-x:auto;white-space:nowrap}
   th,td{padding:10px 10px;border-bottom:1px solid var(--line);text-align:right}
   th:first-child,td:first-child{text-align:left;position:sticky;left:0;background:var(--panel)}
   thead th{color:var(--mut);font-weight:600;font-size:12px;border-bottom:2px solid var(--line)}
   tbody tr:hover td{background:var(--panel2)}
   td.name{font-weight:600}
-  .code{color:var(--mut);font-weight:400;font-size:11px;margin-left:4px}
-  .flag{font-size:10px;padding:1px 6px;border-radius:6px;margin-left:6px;vertical-align:middle}
-  .f-ok{background:rgba(94,224,176,.15);color:var(--good)}
-  .f-est{background:rgba(255,180,84,.15);color:var(--warn)}
-  .f-na{background:rgba(142,162,189,.15);color:var(--mut)}
-  .f-live{background:rgba(61,169,252,.18);color:var(--acc)}
-  .legend{font-size:11px;color:var(--mut);margin:8px 2px 14px}
-  .legend span{margin-right:14px}
-  .notes{font-size:12px;color:var(--mut);background:var(--panel2);border:1px solid var(--line);
+.code{color:var(--mut);font-weight:400;font-size:11px;margin-left:4px}
+.flag{font-size:10px;padding:1px 6px;border-radius:6px;margin-left:6px;vertical-align:middle}
+.f-ok{background:rgba(94,224,176,.15);color:var(--good)}
+.f-est{background:rgba(255,180,84,.15);color:var(--warn)}
+.f-na{background:rgba(142,162,189,.15);color:var(--mut)}
+.f-live{background:rgba(61,169,252,.18);color:var(--acc)}
+.legend{font-size:11px;color:var(--mut);margin:8px 2px 14px}
+.legend span{margin-right:14px}
+.notes{font-size:12px;color:var(--mut);background:var(--panel2);border:1px solid var(--line);
     border-radius:12px;padding:14px 16px;margin-top:18px}
-  .notes b{color:var(--txt)}
-  .notes a{color:var(--acc);text-decoration:none}
-  .notes a:hover{text-decoration:underline}
-  .notes ul{margin:8px 0 0;padding-left:18px}
-  .notes li{margin:4px 0}
-  .pill{display:inline-block;background:var(--chip);border:1px solid var(--line);border-radius:20px;
+.notes b{color:var(--txt)}
+.notes a{color:var(--acc);text-decoration:none}
+.notes a:hover{text-decoration:underline}
+.notes ul{margin:8px 0 0;padding-left:18px}
+.notes li{margin:4px 0}
+.pill{display:inline-block;background:var(--chip);border:1px solid var(--line);border-radius:20px;
     padding:3px 10px;font-size:11px;color:var(--mut);margin:2px 4px 2px 0}
-  .err{color:var(--warn);font-size:11px}
-  .srcgrid{display:grid;grid-template-columns:1fr;gap:8px;margin-top:6px}
-  .srcrow{display:flex;justify-content:space-between;gap:10px;font-size:12px;border-bottom:1px dashed var(--line);padding:6px 0}
-  .srcrow .s{color:var(--mut)}
-  .stat-ok{color:var(--good)} .stat-wait{color:var(--warn)} .stat-live{color:var(--acc)}
-  .tokenbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:2px 0 12px}
-  .tokenbar input{background:var(--panel2);border:1px solid var(--line);border-radius:8px;color:var(--txt);
+.err{color:var(--warn);font-size:11px}
+.srcgrid{display:grid;grid-template-columns:1fr;gap:8px;margin-top:6px}
+.srcrow{display:flex;justify-content:space-between;gap:10px;font-size:12px;border-bottom:1px dashed var(--line);padding:6px 0}
+.srcrow .s{color:var(--mut)}
+.stat-ok{color:var(--good)} .stat-wait{color:var(--warn)} .stat-live{color:var(--acc)}
+.tokenbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:2px 0 12px}
+.tokenbar input{background:var(--panel2);border:1px solid var(--line);border-radius:8px;color:var(--txt);
     padding:7px 10px;font-size:12px;min-width:240px}
-  .tokenbar .hint{font-size:11px;color:var(--mut)}
+.tokenbar .hint{font-size:11px;color:var(--mut)}
 </style>
 </head>
 <body>
 <div class="wrap">
-
   <header class="top">
     <div>
       <h1>證券市場儀表板</h1>
-      <div class="sub">台股成交值（近5年＋今年 YTD）｜上市櫃主要券商財務（含總資產、總權益）</div>
+      <div class="sub">台股成交值（近5年＋今年 YTD）｜投資人開戶分析｜上市櫃主要券商財務（含總資產、總權益）</div>
     </div>
     <div class="updated">
-      最新行情：<b id="liveDate">載入中…</b><br/>
+最新行情：<b id="liveDate">載入中…</b><br/>
       <span id="liveStatus" class="err"></span><br/>
       <button class="reload" onclick="loadAll()">↻ 重新整理即時資料</button>
     </div>
@@ -97,8 +96,8 @@
     </div>
     <div class="kpi">
       <div class="lab">2026 YTD 成交值（集中）</div>
-      <div class="val" id="kpiYTD">89.86 <span style="font-size:14px">兆</span></div>
-      <div class="meta" id="kpiYTDmeta">2026 1–5 月官方（開頁即時更新至最新）</div>
+      <div class="val" id="kpiYTD">118.92 <span style="font-size:14px">兆</span></div>
+      <div class="meta" id="kpiYTDmeta">2026 1–6 月官方（開頁即時更新至最新）</div>
     </div>
     <div class="kpi">
       <div class="lab">2025 三市合計成交值</div>
@@ -110,13 +109,58 @@
   <!-- 成交值 -->
   <section>
     <h2>台股成交值趨勢（集中＋櫃買＋興櫃）</h2>
-    <p class="desc">全體證券成交金額，單位兆元。2021–2025 全年、2026 為 1–5 月累計，皆官方統計。興櫃僅 2024 年起提供。集中市場另有「即時 YTD」KPI（開頁時由 TWSE 帶入最新）。</p>
+    <p class="desc">全體證券成交金額，單位兆元。2021–2025 全年、2026 為 1–6 月累計，皆官方統計（三市已一致更新至 2026/06）。興櫃僅 2024 年起提供。集中市場另有「即時 YTD」KPI（開頁時由 TWSE 帶入最新）。</p>
     <div class="chartbox"><canvas id="turnoverChart"></canvas></div>
     <div class="legend">
       <span style="color:var(--acc)">■ 集中市場（TWSE）</span>
       <span style="color:var(--acc2)">■ 櫃買（TPEx）</span>
       <span style="color:var(--warn)">■ 興櫃（TPEx）</span>
-      <span>2026 為 1–5 月累計</span>
+      <span>2026 為 1–6 月累計</span>
+    </div>
+  </section>
+
+  <!-- 投資人開戶分析 -->
+  <section>
+    <h2>投資人開戶分析（全市場）</h2>
+    <p class="desc">全市場證券投資人開戶結構。累計開戶人數與年度淨增＝TWSE「投資人開戶人數變動統計表」（資料至 2026/06）；年齡／性別分布＝TWSE「投資人開戶數年齡分布統計表」（2026/06）。單位：萬戶。</p>
+    <div class="kpis" style="margin:6px 0 16px">
+      <div class="kpi">
+        <div class="lab">累計開戶人數（2026/06）</div>
+        <div class="val">1,448.8 <span style="font-size:14px">萬戶</span></div>
+        <div class="meta">男 690.3萬｜女 747.1萬｜法人 11.5萬</div>
+      </div>
+      <div class="kpi">
+        <div class="lab">2026 上半年淨增</div>
+        <div class="val up">+72.0 <span style="font-size:14px">萬戶</span></div>
+        <div class="meta">已超越 2025 全年（+55.2萬）</div>
+      </div>
+      <div class="kpi">
+        <div class="lab">最大年齡族群</div>
+        <div class="val">61歲以上</div>
+        <div class="meta">占 29.5%（427.4萬戶）</div>
+      </div>
+      <div class="kpi">
+        <div class="lab">20–30歲占比</div>
+        <div class="val">12.8%</div>
+        <div class="meta">185.4萬戶｜年輕客群滲透偏低</div>
+      </div>
+    </div>
+    <div class="chartbox"><canvas id="acctTrendChart"></canvas></div>
+    <div class="legend">
+      <span style="color:var(--acc)">■ 年底累計開戶人數（萬戶，左軸）</span>
+      <span style="color:var(--acc2)">■ 年度淨增（萬戶，右軸）</span>
+      <span>2026 為 1–6 月</span>
+    </div>
+    <div class="chartbox short" style="margin-top:14px"><canvas id="acctAgeChart"></canvas></div>
+    <div class="legend"><span>年齡分布為 2026/06 累計開戶人數占比；「法人」為其他（法人）戶。</span></div>
+    <div class="notes" style="margin-top:14px">
+      <b>營運觀點（推論，供內部參考）</b>
+      <ul>
+        <li>開戶動能與成交量同步爆發：2026 上半年淨增 72 萬戶已超越 2025 全年（55.2 萬），3 月（+16.2萬）、6 月（+15.5萬）為高峰，對應集中市場 1–6 月成交 118.9 兆（vs 2025 全年 101.9 兆）。後台開戶／客服／風控量能需同步檢視是否吃緊。</li>
+        <li>結構性缺口：61 歲以上占 29.5% 為最大族群，20–30 歲僅 12.8%。年輕客群滲透率低＝數位開戶體驗與獲客的最大機會點（亦為長期成長瓶頸）。</li>
+        <li>女性開戶數（747 萬）已超越男性（690 萬），產品、介面與服務設計不宜預設男性為主要客群。</li>
+        <li>提醒：此為全市場數據，非本公司自有開戶數；若要對照本公司市占與獲客效率，需另接內部開戶資料。</li>
+      </ul>
     </div>
   </section>
 
@@ -131,7 +175,7 @@
   <!-- 財務表 -->
   <section>
     <h2>上市櫃主要券商財務（含總資產、總權益）</h2>
-    <p class="desc">總資產／總權益＝公開資訊觀測站 MOPS「綜合證券商財務資料」<b>個別（非合併）</b>資產負債表，民國115年04月（2026/04），單位億元，已核實。市占與獲利為各期間公開資料（見備註）。</p>
+    <p class="desc">總資產／總權益＝公開資訊觀測站 MOPS「綜合證券商財務資料」<b>個別（非合併）</b>資產負債表，民國115年05月（2026/05），單位億元，已核實。市占與獲利為各期間公開資料（見備註）。元富證 5920 未列於當月綜合證券商財報，暫沿用 2026/04。</p>
     <table id="finTable">
       <thead>
         <tr>
@@ -146,7 +190,7 @@
       <tbody id="finBody"></tbody>
     </table>
     <div class="legend" style="margin-top:10px">
-      <span><span class="flag f-ok">✓核實</span> 公開財報／MOPS 個別資產負債表 2026/04</span>
+      <span><span class="flag f-ok">✓核實</span> 公開財報／MOPS 個別資產負債表 2026/05</span>
       <span><span class="flag f-est">~估算</span> 推估／不同期間</span>
       <span><span class="flag f-na">待查</span> 該期間尚無公開數</span>
     </div>
@@ -164,54 +208,66 @@
     <b>數據說明與資料來源</b>
     <ul>
       <li><b>成交值＝全體證券成交金額（官方），單位兆元，使用者提供之 TWSE／TPEx 統計：</b><br/>
-        集中市場：2021 = 95.52、2022 = 59.57、2023 = 67.21、2024 = 99.81、2025 = 101.86、2026(1–5月) = 89.86。<br/>
-        櫃買（上櫃）：2021 = 21.07、2022 = 15.50、2023 = 18.60、2024 = 27.17、2025 = 28.09、2026(1–5月) = 22.37。<br/>
-        興櫃：2024 = 0.81、2025 = 1.08、2026(1–5月) = 0.93（2021–2023 未提供）。<br/>
-        官方頁：<a href="https://www.twse.com.tw/zh/trading/statistics/index02.html" target="_blank">TWSE 證券成交量值統計表</a>、<a href="https://www.tpex.org.tw/zh-tw/mainboard/trading/info/statistics/year.html" target="_blank">TPEx 上櫃年報表</a>、<a href="https://www.tpex.org.tw/zh-tw/esb/trading/statistics/month.html" target="_blank">興櫃月報表</a>。註：此「全體證券」口徑含股票/ETF/權證/債券等，數字略高於僅計股票之封關報導（如 2025 股票 101.08 兆）。</li>
-      <li><b>2026 集中市場 YTD（即時）：</b>開頁時由 <a href="https://openapi.twse.com.tw" target="_blank">TWSE</a> 逐月加總計算並更新 KPI；若被瀏覽器 CORS 擋下，KPI 保留 2026 1–5 月官方值 89.86 兆。</li>
+集中市場：2021 = 95.52、2022 = 59.57、2023 = 67.21、2024 = 99.81、2025 = 101.86、2026(1–6月) = 118.92。<br/>
+櫃買（上櫃）：2021 = 21.07、2022 = 15.50、2023 = 18.60、2024 = 27.17、2025 = 28.09、2026(1–6月) = 28.27。<br/>
+興櫃：2024 = 0.81、2025 = 1.08、2026(1–6月) = 1.11（2021–2023 未提供）。<br/>
+2026/06 單月：集中 29.06 兆（21 交易日日值加總）、上櫃 5.90 兆（總計 1~10）、興櫃 0.175 兆。三市 2026 1–6 月合計約 148.3 兆。<br/>
+官方頁：<a href="https://www.twse.com.tw/zh/trading/statistics/index02.html" target="_blank">TWSE 證券成交量值統計表</a>、<a href="https://www.tpex.org.tw/zh-tw/mainboard/trading/info/statistics/year.html" target="_blank">TPEx 上櫃年報表</a>、<a href="https://www.tpex.org.tw/zh-tw/esb/trading/statistics/month.html" target="_blank">興櫃月報表</a>。註：此「全體證券」口徑含股票/ETF/權證/債券等，數字略高於僅計股票之封關報導（如 2025 股票 101.08 兆）。</li>
+      <li><b>投資人開戶（全市場）：</b>累計開戶人數（年底，萬戶）2022 = 1,201.9、2023 = 1,251.2、2024 = 1,321.6、2025 = 1,376.8、2026/06 = 1,448.8；年度淨增（萬戶）2022 = 4.5、2023 = 49.3、2024 = 70.4、2025 = 55.2、2026(1–6月) = 72.0。2026/06 年齡分布（累計開戶人數、占比）：0–19 = 78.6 萬(5.42%)、20–30 = 185.4 萬(12.8%)、31–40 = 235.8 萬(16.27%)、41–50 = 270.4 萬(18.67%)、51–60 = 239.8 萬(16.55%)、61 以上 = 427.4 萬(29.5%)、法人 = 11.5 萬(0.79%)；性別：男 690.3 萬、女 747.1 萬。來源：<a href="https://www.twse.com.tw/zh/statistics/statisticsList?type=07" target="_blank">TWSE 投資人開戶統計</a>（開戶人數變動統計表 C02012、開戶數年齡分布統計表）。註：111 年 8–9 月因券商靜止戶銷戶致當年淨增偏低。</li>
+      <li><b>2026 集中市場 YTD（即時）：</b>開頁時由 <a href="https://openapi.twse.com.tw" target="_blank">TWSE</a> 逐月加總計算並更新 KPI；若被瀏覽器 CORS 擋下，KPI 保留 2026 1–6 月官方值 118.92 兆。</li>
       <li><b>興櫃（ESB）：</b>本版尚未併入成交值圖；來源：<a href="https://www.tpex.org.tw/zh-tw/esb/trading/statistics/day.html" target="_blank">興櫃日報表</a>、<a href="https://www.tpex.org.tw/zh-tw/esb/trading/statistics/month.html" target="_blank">月報表</a>。</li>
       <li><b>券商市占（2025/11，本國券商）：</b>元大 14.51%、凱基 10.67%、富邦 6.95%、永豐金 5.04%、國泰 4.50%。來源：<a href="https://money.udn.com/money/story/5607/9202633" target="_blank">經濟日報</a>、<a href="https://www.ctee.com.tw/news/20251209700210-439901" target="_blank">工商時報</a>。</li>
-      <li><b>券商獲利／財務：</b>元大證 FY24 211 億、25 前 9 月 164.95 億；凱基證 25 前三季 &gt;81 億；國泰證 FY24 41.8 億(+98%)；群益證 FY25 57.4 億(+17%, EPS 2.64, 總資產 3,932 億, 淨值 529 億, 資本適足 272%) ✓；統一證 總資產約 2,110 億(Q1’25)。
-        <b>總資產／總權益（11 家）＝ MOPS「綜合證券商財務資料」個別資產負債表，民國115年04月（2026/04）</b>，業主權益為權益總額；單位億元。元大 12,486／1,861、凱基 6,135／780、富邦 4,939／687、永豐金 3,517/453、群益 3,725/504、統一 2,740/448、元富 1,873/288、兆豐 1,606/264、國泰 1,833/185、康和 657/143、宏遠 238/61。來源：<a href="https://mops.twse.com.tw/mops/#/web/t163sb01" target="_blank">公開資訊觀測站 t163sb01</a>。下季更新時重新匯出即可替換。</li>
+      <li><b>券商獲利／財務：</b>元大證 FY24 211 億、25 前 9 月 164.95 億；凱基證 25 前三季 &gt;81 億；國泰證 FY24 41.8 億(+98%)；群益證 FY25 57.4 億(+17%, EPS 2.64, 資本適足 272%) ✓；統一證 總資產約 2,110 億(Q1'25)。
+        <b>總資產／總權益（11 家）＝ MOPS「綜合證券商財務資料」個別資產負債表，民國115年05月（2026/05）</b>，業主權益為權益總額；單位億元。元大 14,313／1,935、凱基 7,259／811、富邦 5,640／727、永豐金 4,054/440、群益 4,195/514、統一 3,258/462、兆豐 1,960/278、國泰 1,880/196、康和 845/149、宏遠 243/65；元富 1,873/288（沿用 2026/04）。來源：<a href="https://mops.twse.com.tw/mops/#/web/t163sb01" target="_blank">公開資訊觀測站 t163sb01</a>。下月更新時重新匯出即可替換。</li>
       <li><b>即時行情：</b>KPI 由 TWSE OpenAPI（FMTQIK）抓最新交易日；失敗時顯示 6/9 離線備援（44,704.44／1.15 兆）。</li>
     </ul>
     <div style="margin-top:10px">
-      <span class="pill">資料整理：2026/06/12</span>
+      <span class="pill">資料整理：2026/07/08</span>
       <span class="pill">幣別：新台幣</span>
       <span class="pill">數據僅供內部參考，非投資建議</span>
     </div>
   </div>
-
 </div>
 
 <script>
 /* ================= 靜態（已核實）資料 ================= */
 // 全體證券成交金額（兆元）。來源：使用者提供之官方統計（TWSE 集中／TPEx 上櫃、興櫃）
-// 2026 為 1–5 月累計（官方月報）；集中市場另有「即時 YTD」KPI 由 TWSE 帶入。
-const YEARS = ['2021','2022','2023','2024','2025','2026(1-5月)'];
-const TSE   = [95.52, 59.57, 67.21, 99.81, 101.86, 89.86];   // 集中市場
-const OTC   = [21.07, 15.50, 18.60, 27.17, 28.09, 22.37];    // 櫃買（上櫃）
-const ESB   = [null,  null,  null,  0.81,  1.08,  0.93];     // 興櫃（僅2024起提供）
+// 集中市場 2026 已更新至 1–6 月；櫃買／興櫃仍為 1–5 月（待 TPEx 6 月月報）。
+const YEARS = ['2021','2022','2023','2024','2025','2026'];
+const TSE = [95.52, 59.57, 67.21, 99.81, 101.86, 118.92]; // 集中市場（2026=1–6月）
+const OTC = [21.07, 15.50, 18.60, 27.17, 28.09, 28.27]; // 櫃買（上櫃，2026=1–6月：1–5月22.37＋6月5.90）
+const ESB = [null, null, null, 0.81, 1.08, 1.11]; // 興櫃（僅2024起提供，2026=1–6月：1–5月0.93＋6月0.175）
+
+/* 投資人開戶（TWSE 開戶人數變動＋年齡分布，資料至 2026/06） */
+const ACCT_YEARS = ['2022','2023','2024','2025','2026(1-6月)'];
+const ACCT_CUM = [1201.9, 1251.2, 1321.6, 1376.8, 1448.8]; // 年底累計，萬戶
+const ACCT_NET = [4.5, 49.3, 70.4, 55.2, 72.0]; // 年度淨增，萬戶
+const ACCT_AGE = {
+  labels: ['0–19','20–30','31–40','41–50','51–60','61以上','法人'],
+  data: [78.6, 185.4, 235.8, 270.4, 239.8, 427.4, 11.5], // 萬戶
+  pct:  [5.42, 12.8, 16.27, 18.67, 16.55, 29.5, 0.79]
+};
 
 const SHARE = {
   labels: ['元大','凱基','富邦','永豐金','國泰'],
-  data:   [14.51, 10.67, 6.95, 5.04, 4.50]
+  data: [14.51, 10.67, 6.95, 5.04, 4.50]
 };
 
 /* 財務表：pf/af/ef => ok / est / na
-   資產/權益 = MOPS 綜合證券商財務資料（AUD402）個別資產負債表，民國115年04月(2026/04)，單位億元 ✓ */
+資產/權益 = MOPS 綜合證券商財務資料（AUD402）個別資產負債表，民國115年05月(2026/05)，單位億元 ✓
+元富 5920 當月未列，沿用 2026/04 值 */
 const FIN = [
-  {name:'元大證', code:'9800', share:'14.51%', profit:'211億 (FY24)｜164.95億 (25前9月)', pf:'ok', assets:'12,486', af:'ok', equity:'1,861', ef:'ok', note:'獲利＆市占龍頭'},
-  {name:'凱基證', code:'9200', share:'10.67%', profit:'>81億 (25前三季)', pf:'ok', assets:'6,135', af:'ok', equity:'780', ef:'ok', note:'傳尋求聯貸擴張信用業務'},
-  {name:'富邦證', code:'9600', share:'6.95%', profit:'15.3億 (Q1\'25)', pf:'ok', assets:'4,939', af:'ok', equity:'687', ef:'ok', note:'擬聯貸 200 億；API 升級'},
-  {name:'永豐金證', code:'9A00', share:'5.04%', profit:'待查', pf:'na', assets:'3,517', af:'ok', equity:'453', ef:'ok', note:'已併匯立證，市占升'},
-  {name:'國泰證', code:'8880', share:'4.50%', profit:'41.8億 (FY24,+98%)｜~45億 (FY25e)', pf:'est', assets:'1,833', af:'ok', equity:'185', ef:'ok', note:'國泰綜合證券；資產大、權益相對薄'},
-  {name:'群益證', code:'9100', share:'~4%', profit:'57.4億 (FY25,+17%)', pf:'ok', assets:'3,725', af:'ok', equity:'504', ef:'ok', note:'群益金鼎；資本適足 272%'},
-  {name:'統一證', code:'5850', share:'前十', profit:'EPS 3.0 (FY25)；營收135.44億', pf:'est', assets:'2,740', af:'ok', equity:'448', ef:'ok', note:'權益/資產比相對高'},
-  {name:'元富證', code:'5920', share:'前十', profit:'待查', pf:'na', assets:'1,873', af:'ok', equity:'288', ef:'ok', note:'PB 0.77'},
-  {name:'兆豐證', code:'7000', share:'前十', profit:'待查', pf:'na', assets:'1,606', af:'ok', equity:'264', ef:'ok', note:'金控子公司'},
-  {name:'康和證', code:'8450', share:'—', profit:'EPS 1.98 (FY25)；營收40.69億', pf:'est', assets:'657', af:'ok', equity:'143', ef:'ok', note:'5 月營收 +231% YoY'},
-  {name:'宏遠證', code:'5859', share:'—', profit:'待查', pf:'na', assets:'238', af:'ok', equity:'61', ef:'ok', note:'MOPS 代號 1260'},
+  {name:'元大證', code:'9800', share:'14.51%', profit:'211億 (FY24)｜164.95億 (25前9月)', pf:'ok', assets:'14,313', af:'ok', equity:'1,935', ef:'ok', note:'獲利＆市占龍頭'},
+  {name:'凱基證', code:'9200', share:'10.67%', profit:'>81億 (25前三季)', pf:'ok', assets:'7,259', af:'ok', equity:'811', ef:'ok', note:'傳尋求聯貸擴張信用業務'},
+  {name:'富邦證', code:'9600', share:'6.95%', profit:'15.3億 (Q1\'25)', pf:'ok', assets:'5,640', af:'ok', equity:'727', ef:'ok', note:'擬聯貸 200 億；API 升級'},
+  {name:'永豐金證', code:'9A00', share:'5.04%', profit:'待查', pf:'na', assets:'4,054', af:'ok', equity:'440', ef:'ok', note:'已併匯立證，市占升'},
+  {name:'國泰證', code:'8880', share:'4.50%', profit:'41.8億 (FY24,+98%)｜~45億 (FY25e)', pf:'est', assets:'1,880', af:'ok', equity:'196', ef:'ok', note:'國泰綜合證券；資產大、權益相對薄'},
+  {name:'群益證', code:'9100', share:'~4%', profit:'57.4億 (FY25,+17%)', pf:'ok', assets:'4,195', af:'ok', equity:'514', ef:'ok', note:'群益金鼎；資本適足 272%'},
+  {name:'統一證', code:'5850', share:'前十', profit:'EPS 3.0 (FY25)；營收135.44億', pf:'est', assets:'3,258', af:'ok', equity:'462', ef:'ok', note:'權益/資產比相對高'},
+  {name:'元富證', code:'5920', share:'前十', profit:'待查', pf:'na', assets:'1,873', af:'est', equity:'288', ef:'est', note:'PB 0.77；資產/權益為 2026/04'},
+  {name:'兆豐證', code:'7000', share:'前十', profit:'待查', pf:'na', assets:'1,960', af:'ok', equity:'278', ef:'ok', note:'金控子公司'},
+  {name:'康和證', code:'8450', share:'—', profit:'EPS 1.98 (FY25)；營收40.69億', pf:'est', assets:'845', af:'ok', equity:'149', ef:'ok', note:'5 月營收 +231% YoY'},
+  {name:'宏遠證', code:'1260', share:'—', profit:'待查', pf:'na', assets:'243', af:'ok', equity:'65', ef:'ok', note:'MOPS 代號 1260'},
 ];
 
 const FALLBACK = { date:'2026/06/09', taiex:'44,704.44', change:1201.66, value:'1.15 兆' };
@@ -221,7 +277,8 @@ const SRC = [
   {id:'src-tse', name:'集中市場 即時行情／YTD', s:'TWSE OpenAPI / 證券成交量值統計表'},
   {id:'src-otc', name:'櫃買成交統計', s:'TPEx 上櫃日/月/年報表'},
   {id:'src-esb', name:'興櫃成交統計', s:'TPEx 興櫃日/月報表'},
-  {id:'src-fm',  name:'同業財務（資產/權益）', s:'MOPS 綜合證券商財務資料（個別，2026/04）'},
+  {id:'src-acct', name:'投資人開戶統計', s:'TWSE 開戶人數變動＋年齡分布（2026/06）'},
+  {id:'src-fm', name:'同業財務（資產/權益）', s:'MOPS 綜合證券商財務資料（個別，2026/05）'},
 ];
 document.getElementById('srcGrid').innerHTML = SRC.map(x=>
   `<div class="srcrow"><span>${x.name}<br/><span class="s">${x.s}</span></span><span id="${x.id}" class="stat-wait">待抓取…</span></div>`).join('');
@@ -245,6 +302,32 @@ const turnoverChart=new Chart(document.getElementById('turnoverChart'),{
       y:{stacked:true,grid:{color:gridC},title:{display:true,text:'兆元'},ticks:{callback:v=>v+'兆'}}}}
 });
 
+/* 開戶：累計（左軸，長條）＋ 年度淨增（右軸，折線） */
+new Chart(document.getElementById('acctTrendChart'),{
+  data:{labels:ACCT_YEARS,datasets:[
+    {type:'bar',label:'年底累計',data:ACCT_CUM,backgroundColor:'#3da9fc',borderRadius:4,yAxisID:'y',maxBarThickness:60},
+    {type:'line',label:'年度淨增',data:ACCT_NET,borderColor:'#5ee0b0',backgroundColor:'#5ee0b0',tension:.3,pointRadius:4,yAxisID:'y1'}
+  ]},
+  options:{responsive:true,maintainAspectRatio:false,
+    plugins:{legend:{display:false},
+      tooltip:{callbacks:{label:c=>` ${c.dataset.label}：${c.parsed.y} 萬戶`}}},
+    scales:{x:{grid:{display:false}},
+      y:{position:'left',grid:{color:gridC},title:{display:true,text:'累計（萬戶）'}},
+      y1:{position:'right',grid:{display:false},title:{display:true,text:'淨增（萬戶）'}}}}
+});
+
+/* 開戶：年齡分布 */
+new Chart(document.getElementById('acctAgeChart'),{
+  type:'bar',
+  data:{labels:ACCT_AGE.labels,datasets:[{data:ACCT_AGE.data,
+    backgroundColor:['#4db8e8','#3da9fc','#5ee0b0','#7fd1a8','#ffb454','#ff6b7a','#8ea2bd'],borderRadius:6,maxBarThickness:46}]},
+  options:{responsive:true,maintainAspectRatio:false,
+    plugins:{legend:{display:false},
+      tooltip:{callbacks:{label:c=>` ${c.parsed.y} 萬戶（${ACCT_AGE.pct[c.dataIndex]}%）`}}},
+    scales:{x:{grid:{display:false}},
+      y:{grid:{color:gridC},title:{display:true,text:'萬戶'}}}}
+});
+
 new Chart(document.getElementById('shareChart'),{
   type:'bar',
   data:{labels:SHARE.labels,datasets:[{data:SHARE.data,
@@ -261,13 +344,13 @@ function flagSpan(f){if(f==='ok')return '<span class="flag f-ok">✓</span>';
 function cell(t,f){return t==='待查'?'<span class="flag f-na">待查</span>':t+(f?flagSpan(f):'');}
 function renderFin(){
   document.getElementById('finBody').innerHTML=FIN.map(r=>`<tr>
-    <td class="name">${r.name}<span class="code">${r.code}</span></td>
-    <td>${r.share}</td>
-    <td style="text-align:left;white-space:normal;font-size:12px">${r.profit} ${r.profit!=='待查'?flagSpan(r.pf):''}</td>
-    <td>${cell(r.assets, r.assets!=='待查'?r.af:'')}</td>
-    <td>${cell(r.equity, r.equity!=='待查'?r.ef:'')}</td>
-    <td style="text-align:left;white-space:normal;font-size:12px;color:var(--mut)">${r.note}</td>
-  </tr>`).join('');
+<td class="name">${r.name}<span class="code">${r.code}</span></td>
+<td>${r.share}</td>
+<td style="text-align:left;white-space:normal;font-size:12px">${r.profit} ${r.profit!=='待查'?flagSpan(r.pf):''}</td>
+<td>${cell(r.assets, r.assets!=='待查'?r.af:'')}</td>
+<td>${cell(r.equity, r.equity!=='待查'?r.ef:'')}</td>
+<td style="text-align:left;white-space:normal;font-size:12px;color:var(--mut)">${r.note}</td>
+</tr>`).join('');
 }
 renderFin();
 
@@ -334,70 +417,22 @@ async function loadYTD(){
     document.getElementById('kpiYTDmeta').textContent=`${year} 年 1–${months} 月即時加總（TWSE，已抓 ${ok}/${months} 月）`;
     setSrc('src-tse','✓ 即時連線 ＋ YTD 加總','stat-live');
   }else{
-    // 抓不齊則保留已內建的 1–5 月官方值，不覆蓋
-    document.getElementById('kpiYTDmeta').textContent='顯示 2026 1–5 月官方值（即時加總受瀏覽器 CORS 限制）';
+    // 抓不齊則保留已內建的 1–6 月官方值，不覆蓋
+    document.getElementById('kpiYTDmeta').textContent='顯示 2026 1–6 月官方值（即時加總受瀏覽器 CORS 限制）';
   }
 }
 
 /* ================= TPEx：櫃買 / 興櫃（best-effort） ================= */
 async function loadTPEx(){
   // 歷史年度已內建官方月報數；最新「當日」因 TPEx 頁為 SPA 無 CORS API，採每月匯入更新
-  setSrc('src-otc','✓ 官方年/月值已內建（至 2026/05）','stat-ok');
-  setSrc('src-esb','✓ 官方年/月值已內建（2024起，至 2026/05）','stat-ok');
-}
-
-/* ================= FinMind：同業資產 / 權益 =================
-   資料集 TaiwanStockBalanceSheet 回傳 {date, stock_id, type, value, origin_name}
-   value 單位為「元」→ ÷1e8 = 億元；資料為季底（如 2026-03-31）。
-   type 為英文標準名、origin_name 為中文，兩者皆比對以提高命中率。 */
-function pickBS(rows, kind){
-  // kind: 'assets' | 'equity'
-  const T=d=>(d.type||'').toLowerCase().replace(/[^a-z]/g,'');
-  const O=d=>(d.origin_name||'');
-  let cand;
-  if(kind==='assets'){
-    // 優先精準：資產總計／TotalAssets；避免「流動資產」等子項
-    cand = rows.find(d=>['totalassets','assetstotal'].includes(T(d)))
-        || rows.find(d=>/資產總計|資產總額|資產合計/.test(O(d)) && !/流動|非流動/.test(O(d)))
-        || rows.find(d=>T(d).includes('totalassets'));
-  }else{
-    cand = rows.find(d=>['totalequity','equity','equityattributabletoownersofparent'].includes(T(d)))
-        || rows.find(d=>/權益總計|權益總額|權益合計|歸屬於母公司業主之權益/.test(O(d)))
-        || rows.find(d=>T(d).includes('totalequity'));
-  }
-  return cand?Number(cand.value):null;
-}
-async function loadFinmind(){
-  const token=document.getElementById('fmToken').value.trim();
-  const fm=document.getElementById('fmStatus');
-  const yr=new Date().getFullYear();
-  if(!token){fm.textContent='請先貼上 FinMind Token 再套用（finmindtrade.com → 會員中心取得）';setSrc('src-fm','△ 待 Token','stat-wait');return;}
-  fm.textContent='FinMind 抓取中…';let filled=0,hitRows=0,lastErr='';
-  for(const r of FIN){
-    if(!r.listed)continue;
-    try{
-      const url=`https://api.finmindtrade.com/api/v4/data?dataset=TaiwanStockBalanceSheet&data_id=${r.code}&start_date=${yr-1}-01-01&token=${encodeURIComponent(token)}`;
-      const res=await withTimeout(url,9000);if(!res.ok)throw new Error('HTTP '+res.status);
-      const j=await res.json();
-      if(j.status && j.status!==200) throw new Error(j.msg||('status '+j.status));
-      const data=j.data||[];if(!data.length)throw new Error('無資料');
-      const lastDate=data.reduce((a,b)=>b.date>a?b.date:a,'');
-      const rows=data.filter(d=>d.date===lastDate);hitRows++;
-      const assets=pickBS(rows,'assets'), equity=pickBS(rows,'equity');
-      if(assets){r.assets=(assets/1e8).toLocaleString('en-US',{maximumFractionDigits:0});r.af='live';filled++;}
-      if(equity){r.equity=(equity/1e8).toLocaleString('en-US',{maximumFractionDigits:0});r.ef='live';filled++;}
-      if((assets||equity)&&!/季$/.test(r.base||'')){r.base=lastDate;r.note=r.note.replace(/｜FinMind.*/,'')+`｜FinMind ${lastDate}`;}
-    }catch(e){lastErr=e.message;}
-  }
-  renderFin();
-  if(filled>0){fm.textContent=`已由 FinMind 帶入 ${filled} 項（單位：億元，最新季資料）`;setSrc('src-fm','✓ FinMind 已帶入','stat-live');}
-  else if(hitRows>0){fm.textContent='FinMind 有回應但欄位未命中，請回報以便調整對應';setSrc('src-fm','△ 欄位待對應','stat-wait');}
-  else{fm.textContent='FinMind 連線失敗或 Token 受限：'+lastErr;setSrc('src-fm','△ 連線/Token 受限','stat-wait');}
+  setSrc('src-otc','✓ 官方年/月值已內建（至 2026/06）','stat-ok');
+  setSrc('src-esb','✓ 官方年/月值已內建（2024起，至 2026/06）','stat-ok');
 }
 
 /* ================= 啟動 ================= */
 async function loadAll(){await loadLive();loadYTD();loadTPEx();
-  setSrc('src-fm','✓ MOPS 個別財報 2026/04（已內建）','stat-ok');}
+  setSrc('src-acct','✓ TWSE 開戶統計（已內建，2026/06）','stat-ok');
+  setSrc('src-fm','✓ MOPS 個別財報 2026/05（已內建）','stat-ok');}
 loadAll();
 </script>
 </body>
